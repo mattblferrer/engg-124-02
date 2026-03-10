@@ -1,7 +1,7 @@
 import processing.serial.*;
 
 Serial port;  // Create object from Serial class
-int val, a0, a1;      // Data received from the serial port
+int a0, a1, high0, low0, high1, low1;      // Data received from the serial port
 int[] values0, values1;
 PrintWriter file;  // output file
 
@@ -17,14 +17,18 @@ void setup()
 }
 
 int getY(int val) {
-  return (int)(val / 255.0f * height) - 1;
+  return (int)(val / 1023.0f * height) - 1;
 }
 
 void draw()
 {
-  while (port.available() > 1) {
-      a0 = port.read();
-      a1 = port.read();
+  while (port.available() > 3) {
+      high0 = port.read();
+      low0 = port.read();
+      high1 = port.read();
+      low1 = port.read();
+      a0 = high0 * 256 + low0;
+      a1 = high1 * 256 + low1;
   }
   for (int i=0; i<width-1; i++) {
       values0[i] = values0[i+1];
