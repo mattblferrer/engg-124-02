@@ -7,3 +7,4 @@ ENGG 124.02 - EMBEDDED SYSTEMS - LABORATORY
 - Activity 5: Interfacing Arduino to Processing 0
 - Activity 6A: Arduino-Processing 1: T-Bird
 - Activity 6B: Arduino-Processing: RGB Control
+- Activity 7: Interfacing Arduino to Processing: Digital Storage Scope 
