@@ -18,7 +18,7 @@ void setup() {
   fill(0);
   textSize(40);  
   birdImg =loadImage("wingsT.png");
-  backImg =loadImage("ECCE1.jpg");
+  backImg =loadImage("stars.jpg");
   wallImg =loadImage("wall.png");
   startImg=loadImage("startpage.jpg");
 }
@@ -59,11 +59,13 @@ void draw() { //runs 60 times a second
       wx[i] -= 6;
     }
     image(birdImg, width/2, y);
+    fill(255);
     text(""+score, width/2+30, 300);
   }
   else {
     imageMode(CENTER);
     image(startImg, width/2,height/2);
+    fill(0);
     text("High Score:"+highScore, 15, 300);
   }
 }
