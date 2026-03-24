@@ -9,3 +9,4 @@ ENGG 124.02 - EMBEDDED SYSTEMS - LABORATORY
 - Activity 6B: Arduino-Processing: RGB Control
 - Activity 7: Interfacing Arduino to Processing: Digital Storage Scope 
 - Activity 8: Interfacing Arduino to Processing: Floppy Bird
+- Activity 9 Part 1: IoT in Processing
